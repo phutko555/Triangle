@@ -3,7 +3,7 @@ class Triangle {
     private Point a, b, c;
     public Triangle(Point a, Point b, Point c) {
         if (isDegenerative(a, b, c)) {
-            throw new IllegalArgumentException("Degenerative triangle, please provide valid vertices.");
+            throw new IllegalArgumentException();
         }
         this.a = a;
         this.b = b;
